@@ -1,0 +1,1161 @@
+<!doctype html>
+<html class="sg">
+
+<head>
+  <meta charset="utf-8">
+  <title>Styledown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="styledown.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="../../js/material.js"></script>
+  <script src="styledown.js"></script>
+</head>
+
+<body class="sg">
+  <div class="heading">
+    <div class="container">
+      <h1>HotelB2B styleguides</h1>
+      <p>This is the styleguide for all the styles used in HotelB2B design.</p>
+      <p>
+        <a href="https://gitlab.xmltravelgate.com/frontcommon/HotelB2B/tree/design" class="btn waves-attach waves-button waves-light xtg-color--light-blue-300 xtg-color-text--white waves-effect">Gitlab repository</a>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div>
+      <section class="sg-section sg-section-how-to-use">
+        <h2 id="how-to-use" class="sg">How to use</h2>
+        <h4 id="you-should-take-a-look-if" class="sg">You should take a look if</h4>
+        <ol class="sg">
+          <li class="sg">Are going to add any component to Angular or edit an existent</li>
+          <li class="sg">Want to edit any SASS style</li>
+          <li class="sg">Want to add style without editing SASS (only adding classes to Angular components)</li>
+        </ol>
+        <h4 id="notes" class="sg">Notes</h4>
+        <ol class="sg">
+          <li class="sg">All the custom classes start by
+            <code class="sg">xtg-</code>and the type. Eg.
+            <code class="sg">xtg-shadow--2dp</code>or
+            <code class="sg">xtg-color--grey-300</code>.</li>
+          <li class="sg">All the utilities classes have simple name followed by the type. Eg.
+            <code class="sg">display--block</code>and
+            <code class="sg">display--inline</code>.</li>
+        </ol>
+      </section>
+
+      <section class="sg-section sg-section-utilities">
+        <h2 id="utilities" class="sg">Utilities</h2>
+        <p class="sg">These classes are helpers that can be used anywhere in the website with any (or almost) element.</p>
+        <section class="sg-block sg-section-undefined">
+          <h3 class="sg-section-heading sg">Static</h3>
+        </section>
+        <section class="sg-block sg-section-display-block">
+          <div class="sg-text">
+            <h3 id="display-block" class="sg">Display block</h3>
+            <p class="sg">Use the
+              <code class="sg">display--block</code>class.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">anchor</code>,
+              <code class="sg">button</code>,
+              <code class="sg">label</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <a class="btn display--block">Block anchor</a>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn display--block&quot;</span>&gt;</span>Block anchor<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-display-inline">
+          <div class="sg-text">
+            <h3 id="display-inline" class="sg">Display inline</h3>
+            <p class="sg">Use the
+              <code class="sg">display--inline</code>class.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">p</code>,
+              <code class="sg">checkbox</code>,
+              <code class="sg">div</code>,
+              <code class="sg">checkbox</code>,
+              <code class="sg">radio</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="display--inline xtg-color--grey-300">Inline paragraph with background color</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;display--inline xtg-color--grey-300&quot;</span>&gt;</span>Inline paragraph with background color<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-position-relative">
+          <div class="sg-text">
+            <h3 id="position-relative" class="sg">Position relative</h3>
+            <p class="sg">Use the
+              <code class="sg">pos--rel</code>class.</p>
+            <p class="sg">Useful for
+              <code class="sg">everything</code>.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="pos--rel xtg-color--grey-300">Relative paragraph with background color</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;pos--rel xtg-color--grey-300&quot;</span>&gt;</span>Relative paragraph with background color<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-position-fixed">
+          <div class="sg-text">
+            <h3 id="position-fixed" class="sg">Position fixed</h3>
+            <p class="sg">Use the
+              <code class="sg">pos--fix</code>class.</p>
+            <p class="sg">Useful for
+              <code class="sg">everything</code>.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="pos--fix xtg-color--grey-300">Fixed paragraph with background color</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;pos--fix xtg-color--grey-300&quot;</span>&gt;</span>Fixed paragraph with background color<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-position-absolute">
+          <div class="sg-text">
+            <h3 id="position-absolute" class="sg">Position absolute</h3>
+            <p class="sg">Use the
+              <code class="sg">pos--abs</code>class.</p>
+            <p class="sg">Useful for
+              <code class="sg">everything</code>.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="pos--abs xtg-color--grey-300">Absolute paragraph with background color</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;pos--abs xtg-color--grey-300&quot;</span>&gt;</span>Absolute paragraph with background color<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-float-left">
+          <div class="sg-text">
+            <h3 id="float-left" class="sg">Float left</h3>
+            <p class="sg">Use the
+              <code class="sg">float--left</code>class.</p>
+            <p class="sg">Useful for everything.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="float--left xtg-color--grey-300">Floated paragraph to left</p>
+              <br>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;float--left xtg-color--grey-300&quot;</span>&gt;</span>Floated paragraph to left<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-float-right">
+          <div class="sg-text">
+            <h3 id="float-right" class="sg">Float right</h3>
+            <p class="sg">Use the
+              <code class="sg">float--right</code>class.</p>
+            <p class="sg">Useful for everything.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="float--right xtg-color--grey-300">Floated paragraph to right</p>
+              <br>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;float--right xtg-color--grey-300&quot;</span>&gt;</span>Floated paragraph to right<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-text-uppercase">
+          <div class="sg-text">
+            <h3 id="text-uppercase" class="sg">Text uppercase</h3>
+            <p class="sg">Use the
+              <code class="sg">text--uppercase</code>class.</p>
+            <p class="sg">Useful for any text.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="text--uppercase">text in uppercase</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text--uppercase&quot;</span>&gt;</span>text in uppercase<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-border-top-for-cards">
+          <div class="sg-text">
+            <h3 id="border-top-for-cards" class="sg">Border top for cards</h3>
+            <p class="sg">Use the
+              <code class="sg">card--border-top</code>class.</p>
+            <p class="sg">Use a border for divide providers from manual info in cards.</p>
+            <p class="sg">Useful for
+              <code class="sg">cards</code>.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-card xtg-shadow--2dp">
+                <div class="xtg-card__title">
+                  <h3 class="xtg-typo--display-3">Card title</h3>
+                </div>
+                <div class="xtg-card__content"></div>
+                <div class="xtg-card__content card--border-top">
+                  <p>Here are the border top</p>
+                </div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card xtg-shadow--2dp&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-typo--display-3&quot;</span>&gt;</span>Card title<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__content card--border-top&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Here are the border top<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-highlight">
+          <div class="sg-text">
+            <h3 id="highlight" class="sg">Highlight</h3>
+            <p class="sg">Use the
+              <code class="sg">highlight</code>class.</p>
+            <p class="sg">For highlight content.</p>
+            <p class="sg">Useful for
+              <code class="sg">data provider container</code>.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="data__provider highlight padding-10">
+                <p class="xtg-label xtg-color--indigo-500 xtg-color-text--white">TOU</p>
+                <p class="xtg-label xtg-color--light-blue-500 xtg-color-text--white">Hotel 1</p>
+                <div class="checkbox checkbox-adv display--inline">
+                  <label for="checkbox-2">
+                    <input type="checkbox" name="property_desc" id="checkbox-2" class="access-hide">Select all
+                    <span class="checkbox-circle"></span>
+                    <span class="checkbox-circle-check"></span>
+                    <span class="checkbox-circle-icon material-icons icon">done</span>
+                  </label>
+                </div>
+                <div class="xtg-option">
+                  <div class="xtg-select__label--textarea">
+                    <span class="xtg-select__label--lang xtg-color--amber-500 xtg-color-text--white xtg-grid--center">es_ES</span>
+                    <span class="xtg-select__label--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure, architecto reiciendis, impedit reprehenderit aliquam quia cum ratione, minus laudantium sed labore voluptatem dolor facilis molestias tempora deserunt. Praesentium, enim.</span>
+                  </div>
+                </div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;data__provider highlight padding-10&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-label xtg-color--indigo-500 xtg-color-text--white&quot;</span>&gt;</span>TOU<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-label xtg-color--light-blue-500 xtg-color-text--white&quot;</span>&gt;</span>Hotel 1<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox checkbox-adv display--inline&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;checkbox-2&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;property_desc&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;checkbox-2&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;access-hide&quot;</span> /&gt;</span>Select all
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox-circle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox-circle-check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;checkbox-circle-icon material-icons icon&quot;</span>&gt;</span>done<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-option&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-select__label--textarea&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-select__label--lang xtg-color--amber-500 xtg-color-text--white xtg-grid--center&quot;</span>&gt;</span>es_ES<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-select__label--text&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure, architecto reiciendis, impedit reprehenderit
+        aliquam quia cum ratione, minus laudantium sed labore voluptatem dolor facilis molestias tempora deserunt. Praesentium,
+        enim.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-undefined">
+          <h3 class="sg-section-heading sg">Dynamic</h3>
+          <p class="sg">These classes are helpers that can be used anywhere in the website with any (or almost) element. Are dynamic styles made for make faster design.</p>
+        </section>
+        <section class="sg-block sg-section-width">
+          <div class="sg-text">
+            <h3 id="width" class="sg">Width</h3>
+            <p class="sg">Use the
+              <code class="sg">width-[quantity]</code>class.</p>
+            <p class="sg">For choose width of an element. Goes from 0 to 100, every ten and uses percentage.</p>
+            <p class="sg">Useful for everything.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="width-20 xtg-color--grey-300">Width 20%</p>
+              <p class="width-50 xtg-color--teal-300">Width 50%</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;width-20 xtg-color--grey-300&quot;</span>&gt;</span>Width 20%<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;width-50 xtg-color--teal-300&quot;</span>&gt;</span>Width 50%<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-height">
+          <div class="sg-text">
+            <h3 id="height" class="sg">Height</h3>
+            <p class="sg">Use the
+              <code class="sg">height-[quantity]</code>class.</p>
+            <p class="sg">For choose height of an element. Goes from 0 to 100, every ten and uses percentage.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">xtg-option anchor</code>,
+              <code class="sg">xtg-option button</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-option">
+                <div class="xtg-select__label--textarea">
+                  <span class="xtg-select__label--lang xtg-color--amber-500 xtg-color-text--white xtg-grid--center">es_ES</span>
+                  <span class="xtg-select__label--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure, architecto reiciendis, impedit reprehenderit aliquam quia cum ratione, minus laudantium sed labore voluptatem dolor facilis molestias tempora deserunt. Praesentium, enim.</span>
+                </div>
+                <div class="xtg-buttons">
+                  <a class="display--block xtg-grid--center height-50 xtg-btn--edit xtg-color--amber-300 xtg-color-text--white">
+                    <i class="icon material-icons">create</i>
+                    <a class="display--block xtg-grid--center height-50 xtg-btn--edit xtg-color--red-A700 xtg-color-text--white">
+                      <i class="icon material-icons">delete</i>
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-option&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-select__label--textarea&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-select__label--lang xtg-color--amber-500 xtg-color-text--white xtg-grid--center&quot;</span>&gt;</span>es_ES<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-select__label--text&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia iure, architecto reiciendis, impedit reprehenderit
+      aliquam quia cum ratione, minus laudantium sed labore voluptatem dolor facilis molestias tempora deserunt. Praesentium,
+      enim.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-buttons&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;display--block xtg-grid--center height-50 xtg-btn--edit xtg-color--amber-300 xtg-color-text--white&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;icon material-icons&quot;</span>&gt;</span>create<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;display--block xtg-grid--center height-50 xtg-btn--edit xtg-color--red-A700 xtg-color-text--white&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;icon material-icons&quot;</span>&gt;</span>delete<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-padding-with-position">
+          <div class="sg-text">
+            <h3 id="padding-with-position" class="sg">Padding with position</h3>
+            <p class="sg">Use the
+              <code class="sg">padding--[position]-[quantity]</code>class.</p>
+            <p class="sg">For add padding to the side you want. Goes from 0 to 100, every ten and uses px.</p>
+            <p class="sg">Useful for everything.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="padding--left-20 xtg-color--grey-300">Padding left 20px</p>
+              <p class="padding--right-10 xtg-color--teal-300">Padding right 10px</p>
+              <p class="padding--top-40 xtg-color--lime-300">Padding top 40px</p>
+              <p class="padding--bottom-30 xtg-color--amber-300">Padding bottom 30px</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;padding--left-20 xtg-color--grey-300&quot;</span>&gt;</span>Padding left 20px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;padding--right-10 xtg-color--teal-300&quot;</span>&gt;</span>Padding right 10px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;padding--top-40 xtg-color--lime-300&quot;</span>&gt;</span>Padding top 40px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;padding--bottom-30 xtg-color--amber-300&quot;</span>&gt;</span>Padding bottom 30px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-padding-without-position">
+          <div class="sg-text">
+            <h3 id="padding-without-position" class="sg">Padding without position</h3>
+            <p class="sg">Use the
+              <code class="sg">padding-[quantity]</code>class.</p>
+            <p class="sg">For add padding to all the sides. Goes from 0 to 100, every ten and uses px.</p>
+            <p class="sg">Useful for everything.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="padding-20 xtg-color--grey-300">Padding 20px</p>
+              <p class="padding-10 xtg-color--teal-300">Padding 10px</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;padding-20 xtg-color--grey-300&quot;</span>&gt;</span>Padding 20px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;padding-10 xtg-color--teal-300&quot;</span>&gt;</span>Padding 10px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-margin-with-position">
+          <div class="sg-text">
+            <h3 id="margin-with-position" class="sg">Margin with position</h3>
+            <p class="sg">Use the
+              <code class="sg">margin--[position]-[quantity]</code>class.</p>
+            <p class="sg">For add margin to the side you want. Goes from 0 to 100, every ten and uses px.</p>
+            <p class="sg">Useful for everything.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="margin--left-20 xtg-color--grey-300">Margin left 20px</p>
+              <p class="margin--right-10 xtg-color--teal-300">Margin right 10px</p>
+              <p class="margin--top-40 xtg-color--lime-300">Margin top 40px</p>
+              <p class="margin--bottom-30 xtg-color--amber-300">Margin bottom 30px</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;margin--left-20 xtg-color--grey-300&quot;</span>&gt;</span>Margin left 20px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;margin--right-10 xtg-color--teal-300&quot;</span>&gt;</span>Margin right 10px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;margin--top-40 xtg-color--lime-300&quot;</span>&gt;</span>Margin top 40px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;margin--bottom-30 xtg-color--amber-300&quot;</span>&gt;</span>Margin bottom 30px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-margin-without-position">
+          <div class="sg-text">
+            <h3 id="margin-without-position" class="sg">Margin without position</h3>
+            <p class="sg">Use the
+              <code class="sg">margin-[quantity]</code>class.</p>
+            <p class="sg">For add margin to all the sides. Goes from 0 to 100, every ten and uses px.</p>
+            <p class="sg">Useful for everything.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <p class="margin-20 xtg-color--grey-300">margin 20px</p>
+              <p class="margin-10 xtg-color--teal-300">margin 10px</p>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;margin-20 xtg-color--grey-300&quot;</span>&gt;</span>margin 20px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;margin-10 xtg-color--teal-300&quot;</span>&gt;</span>margin 10px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-undefined">
+          <h3 class="sg-section-heading sg">Shadows</h3>
+          <p class="sg">Box shadow for add in any element.
+            <strong class="sg">Styles stealed from MDL.</strong>
+          </p>
+        </section>
+        <section class="sg-block sg-section-small">
+          <div class="sg-text">
+            <h3 id="small" class="sg">Small</h3>
+            <p class="sg">Use the
+              <code class="sg">xtg-shadow--2dp</code>class.</p>
+            <p class="sg">Mandatory use with
+              <code class="sg">cards</code>as base, instead it will don&apos;t have border around it because shadow makes the job.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-card xtg-shadow--2dp">
+                <div class="xtg-card__title">
+                  <h3 class="xtg-typo--display-3">Small shadow</h3>
+                </div>
+                <div class="xtg-card__content"></div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card xtg-shadow--2dp&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-typo--display-3&quot;</span>&gt;</span>Small shadow<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-medium-small">
+          <div class="sg-text">
+            <h3 id="medium-small" class="sg">Medium-small</h3>
+            <p class="sg">Use the
+              <code class="sg">xtg-shadow--3dp</code>class.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">cards</code>,
+              <code class="sg">button</code>,
+              <code class="sg">anchor</code>,
+              <code class="sg">modal</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-card xtg-shadow--3dp">
+                <div class="xtg-card__title">
+                  <h3 class="xtg-typo--display-3">Medium small shadow</h3>
+                </div>
+                <div class="xtg-card__content"></div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card xtg-shadow--3dp&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-typo--display-3&quot;</span>&gt;</span>Medium small shadow<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-medium">
+          <div class="sg-text">
+            <h3 id="medium" class="sg">Medium</h3>
+            <p class="sg">Use the
+              <code class="sg">xtg-shadow--4dp</code>class.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">cards</code>,
+              <code class="sg">button</code>,
+              <code class="sg">anchor</code>,
+              <code class="sg">modal</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-card xtg-shadow--4dp">
+                <div class="xtg-card__title">
+                  <h3 class="xtg-typo--display-3">Medium shadow</h3>
+                </div>
+                <div class="xtg-card__content"></div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card xtg-shadow--4dp&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-typo--display-3&quot;</span>&gt;</span>Medium shadow<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-medium-large">
+          <div class="sg-text">
+            <h3 id="medium-large" class="sg">Medium-large</h3>
+            <p class="sg">Use the
+              <code class="sg">xtg-shadow--6dp</code>class.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">cards</code>,
+              <code class="sg">button</code>,
+              <code class="sg">anchor</code>,
+              <code class="sg">modal</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-card xtg-shadow--6dp">
+                <div class="xtg-card__title">
+                  <h3 class="xtg-typo--display-3">Medium large shadow</h3>
+                </div>
+                <div class="xtg-card__content"></div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card xtg-shadow--6dp&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-typo--display-3&quot;</span>&gt;</span>Medium large shadow<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-large">
+          <div class="sg-text">
+            <h3 id="large" class="sg">Large</h3>
+            <p class="sg">Use the
+              <code class="sg">xtg-shadow--8dp</code>class.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">cards</code>,
+              <code class="sg">button</code>,
+              <code class="sg">anchor</code>,
+              <code class="sg">modal</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-card xtg-shadow--8dp">
+                <div class="xtg-card__title">
+                  <h3 class="xtg-typo--display-3">Large shadow</h3>
+                </div>
+                <div class="xtg-card__content"></div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card xtg-shadow--8dp&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-typo--display-3&quot;</span>&gt;</span>Large shadow<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-extra-large">
+          <div class="sg-text">
+            <h3 id="extra-large" class="sg">Extra large</h3>
+            <p class="sg">Use the
+              <code class="sg">xtg-shadow--16dp</code>class.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">cards</code>,
+              <code class="sg">button</code>,
+              <code class="sg">anchor</code>,
+              <code class="sg">modal</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-card xtg-shadow--16dp">
+                <div class="xtg-card__title">
+                  <h3 class="xtg-typo--display-3">Extra large shadow</h3>
+                </div>
+                <div class="xtg-card__content"></div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card xtg-shadow--16dp&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-typo--display-3&quot;</span>&gt;</span>Extra large shadow<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-ultra-large">
+          <div class="sg-text">
+            <h3 id="ultra-large" class="sg">Ultra large</h3>
+            <p class="sg">Use the
+              <code class="sg">xtg-shadow--24dp</code>class.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">cards</code>,
+              <code class="sg">button</code>,
+              <code class="sg">anchor</code>,
+              <code class="sg">modal</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-card xtg-shadow--24dp">
+                <div class="xtg-card__title">
+                  <h3 class="xtg-typo--display-3">Ultra large shadow</h3>
+                </div>
+                <div class="xtg-card__content"></div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card xtg-shadow--24dp&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-typo--display-3&quot;</span>&gt;</span>Ultra large shadow<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-card__content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-undefined">
+          <h3 class="sg-section-heading sg">Grid</h3>
+          <p class="sg">Custom grid for elements.</p>
+        </section>
+        <section class="sg-block sg-section-center-center">
+          <div class="sg-text">
+            <h3 id="center-center" class="sg">Center-center</h3>
+            <p class="sg">Use the
+              <code class="sg">xtg-grid--center</code>class. It will not work everywhere.</p>
+            <p class="sg">Useful for:
+              <br class="sg">
+              <code class="sg">button</code>,
+              <code class="sg">anchor</code>,
+              <code class="sg">text</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-select__label--textarea">
+                <span class="xtg-select__label--lang xtg-color--amber-500 xtg-color-text--white xtg-grid--center">es_ES</span>
+                <span class="xtg-select__label--text">Language tag is aligned depending on the size of the text, so... do not need to worry about the label, it&apos;s position is calculated depending on this! Let&apos;s see it!
+                  <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-select__label--textarea&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-select__label--lang xtg-color--amber-500 xtg-color-text--white xtg-grid--center&quot;</span>&gt;</span>es_ES<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-select__label--text&quot;</span>&gt;</span>Language tag is aligned depending on the size of the text, so... do not need to worry about the label, it&apos;s position is
+    calculated depending on this! Let&apos;s see it!
+    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+      </section>
+
+      <section class="sg-section sg-section-icons">
+        <h2 id="icons" class="sg">Icons</h2>
+        <p class="sg">We use Material Icons specified in the
+          <a href="https://design.google.com/icons/" class="sg">Google Project</a>. Go there for know available icons and their names.</p>
+        <section class="sg-block sg-section-use">
+          <div class="sg-text">
+            <h3 id="use" class="sg">Use</h3>
+            <p class="sg">Use the
+              <code class="sg">material-icons</code>class inside a
+              <code class="sg">span</code>or
+              <code class="sg">i</code>tags.</p>
+            <p class="sg">Remember to add
+              <code class="sg">icon</code>class with it, instead the icon will have font-size defined in the font-face of material icons.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="col-md-6">
+                <p>icon class added</p>
+                <a class="btn xtg-color--red-A700 xtg-color-text--white">
+                  <span class="material-icons icon">pets</span>
+                </a>
+                <a class="btn xtg-color--lime-600 xtg-color-text--white">
+                  <span class="material-icons icon">visibility</span>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <p>icon class not added</p>
+                <a class="btn xtg-color--indigo-500 xtg-color-text--white">
+                  <span class="material-icons">star rate</span>
+                </a>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>icon class added<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn xtg-color--red-A700 xtg-color-text--white&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons icon&quot;</span>&gt;</span>pets<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn xtg-color--lime-600 xtg-color-text--white&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons icon&quot;</span>&gt;</span>visibility<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>icon class not added<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn xtg-color--indigo-500 xtg-color-text--white&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons&quot;</span>&gt;</span>star rate<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-size">
+          <div class="sg-text">
+            <h3 id="size" class="sg">Size</h3>
+            <p class="sg">Use
+              <code class="sg">md-[size]</code>with
+              <code class="sg">material-icons</code>class.</p>
+            <p class="sg">Have 4 diferent size:
+              <code class="sg">18</code>,
+              <code class="sg">24</code>,
+              <code class="sg">36</code>and
+              <code class="sg">48</code>.
+              <strong class="sg">Remember</strong>
+              not use
+              <code class="sg">icon</code>class here!</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="col-md-3">
+                <i class="material-icons md-18">face</i>
+                <p>18px</p>
+              </div>
+              <div class="col-md-3">
+                <i class="material-icons md-24">face</i>
+                <p>24px</p>
+              </div>
+              <div class="col-md-3">
+                <i class="material-icons md-36">face</i>
+                <p>36px</p>
+              </div>
+              <div class="col-md-3">
+                <i class="material-icons md-48">face</i>
+                <p>48px</p>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-18&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>18px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-24&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>24px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-36&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>36px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-48&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>48px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-state">
+          <div class="sg-text">
+            <h3 id="state" class="sg">State</h3>
+            <p class="sg">Use
+              <code class="sg">md-dark</code>class for dark icon or
+              <code class="sg">md-light</code>class for light icon.</p>
+            <p class="sg">Also, you can define the state of the icon with
+              <code class="sg">md-inactive</code>class. This will set icon in a disabled style.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="col-md-6">
+                <i class="material-icons md-dark md-24">face</i>
+                <i class="material-icons md-dark md-inactive md-24">face</i>
+              </div>
+              <div class="col-md-6 xtg-color--blue-grey-900">
+                <i class="material-icons md-light md-24">face</i>
+                <i class="material-icons md-light md-inactive md-24">face</i>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-dark md-24&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-dark md-inactive md-24&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6 xtg-color--blue-grey-900&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-light md-24&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-light md-inactive md-24&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-color">
+          <div class="sg-text">
+            <h3 id="color" class="sg">Color</h3>
+            <p class="sg">You can use all
+              <code class="sg">xtg-color-text</code>classes available for use with it.
+              <strong class="sg">Remember</strong>
+              not to use
+              <code class="sg">xtg-color</code>class, because it colors the background!</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="col-md-6">
+                <p>good</p>
+                <i class="material-icons md-24 xtg-color-text--amber-300">face</i>
+                <i class="material-icons md-24 xtg-color-text--red-300">face</i>
+              </div>
+              <div class="col-md-6">
+                <p>bad</p>
+                <i class="material-icons md-24 xtg-color--amber-300">face</i>
+                <i class="material-icons md-24 xtg-color--red-300">face</i>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>good<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-24 xtg-color-text--amber-300&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-24 xtg-color-text--red-300&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-6&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>bad<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-24 xtg-color--amber-300&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;material-icons md-24 xtg-color--red-300&quot;</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+      </section>
+
+      <section class="sg-section sg-section-alerts">
+        <h2 id="alerts" class="sg">Alerts</h2>
+        <p class="sg">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. They are created dynamically using Bootstrap alerts as a base and designed custom alerts.</p>
+        <section class="sg-block sg-section-alert-size">
+          <div class="sg-text">
+            <h3 id="alert-size" class="sg">Alert size</h3>
+            <p class="sg">Use
+              <code class="sg">xtg-alert--[size]</code>class with
+              <code class="sg">xtg-alert</code>if you want your alert smaller.</p>
+            <p class="sg">There are available three sizes: big, normal (no need to use any class) and small.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-alert--warning xtg-alert--big">
+                <p class="xtg-alert__title">This is big size.</p>
+              </div>
+              <div class="xtg-alert--success">
+                <p class="xtg-alert__title">This is normal size.</p>
+              </div>
+              <div class="xtg-alert--info xtg-alert--small">
+                <p class="xtg-alert__title">This is small size.</p>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert--warning xtg-alert--big&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert__title&quot;</span>&gt;</span>This is big size.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert--success&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert__title&quot;</span>&gt;</span>This is normal size.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert--info xtg-alert--small&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert__title&quot;</span>&gt;</span>This is small size.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-alert-colors">
+          <div class="sg-text">
+            <h3 id="alert-colors" class="sg">Alert colors</h3>
+            <p class="sg">There are available six colors, defined by type:
+              <code class="sg">danger</code>,
+              <code class="sg">success</code>,
+              <code class="sg">info</code>,
+              <code class="sg">warning</code>,
+              <code class="sg">default</code>and
+              <code class="sg">primary</code>.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="xtg-alert--success">
+                <p class="xtg-alert__title">
+                  <strong>Well done!</strong>
+                  <br>You successfully read this important alert message.</p>
+              </div>
+              <div class="xtg-alert--info">
+                <p class="xtg-alert__title">
+                  <strong>Heads up!</strong>
+                  <br>This alert needs your attention, but it&apos;s not super important.</p>
+              </div>
+              <div class="xtg-alert--warning">
+                <p class="xtg-alert__title">
+                  <strong>Warning!</strong>
+                  <br>Better check yourself, you&apos;re not looking too good.</p>
+              </div>
+              <div class="xtg-alert--danger">
+                <p class="xtg-alert__title">
+                  <strong>Oh snap!</strong>
+                  <br>Change a few things up and try submitting again.</p>
+              </div>
+              <div class="xtg-alert--default">
+                <p class="xtg-alert__title">
+                  <strong>Here we are!</strong>
+                  <br>This is a default alert using grey as base.</p>
+              </div>
+              <div class="xtg-alert--primary">
+                <p class="xtg-alert__title">
+                  <strong>Oh dear!</strong>
+                  <br>This is a primary alert using the page base color.</p>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert--success&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Well done!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>You successfully read this important alert message.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert--info&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Heads up!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>This alert needs your attention, but it&apos;s not super important.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert--warning&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Warning!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>Better check yourself, you&apos;re not looking too good.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert--danger&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Oh snap!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>Change a few things up and try submitting again.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert--default&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Here we are!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>This is a default alert using grey as base.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert--primary&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;xtg-alert__title&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Oh dear!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>This is a primary alert using the page base color.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+      </section>
+
+      <section class="sg-section sg-section-modals">
+        <h2 id="modals" class="sg">Modals</h2>
+        <p class="sg">Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. Material Design style.</p>
+        <section class="sg-block sg-section-size">
+          <div class="sg-text">
+            <h3 id="size" class="sg">Size</h3>
+            <p class="sg">There are available two sizes: normal and small.</p>
+            <p class="sg">Use
+              <code class="sg">modal-xs</code>for small size.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <a data-toggle="modal" data-target="#modal" class="btn waves-attach waves-button waves-light waves-effect">Open normal modal</a>
+              <a data-toggle="modal" data-target="#modal-xs" class="btn waves-attach waves-button waves-light waves-effect">Open small modal</a>
+              <div id="modal-xs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade">
+                <div role="document" class="modal-dialog modal-xs">
+                  <div class="modal-content">
+                    <div class="modal-heading">
+                      <p class="modal-title">Small modal</p>
+                    </div>
+                    <div class="modal-inner">
+                      <p class="text-black-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <p class="text-right">
+                        <a data-dismiss="modal" class="btn btn-flat xtg-color-text--grey-400">Cancel</a>
+                        <a data-dismiss="modal" class="btn btn-flat btn-brand-accent">Accept</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade">
+                <div role="document" class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-heading">
+                      <p class="modal-title">Normal modal</p>
+                    </div>
+                    <div class="modal-inner">
+                      <p class="text-black-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <p class="text-right">
+                        <a data-dismiss="modal" class="btn btn-flat xtg-color-text--grey-400">Cancel</a>
+                        <a data-dismiss="modal" class="btn btn-flat btn-brand-accent">Accept</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn waves-attach waves-button waves-light waves-effect&quot;</span>&gt;</span>Open normal modal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#modal-xs&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn waves-attach waves-button waves-light waves-effect&quot;</span>&gt;</span>Open small modal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;modal-xs&quot;</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">&quot;-1&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;dialog&quot;</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">&quot;myModalLabel&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal fade&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;document&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-dialog modal-xs&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-title&quot;</span>&gt;</span>Small modal<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-black-hint&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-right&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-flat xtg-color-text--grey-400&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-flat btn-brand-accent&quot;</span>&gt;</span>Accept<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">&quot;-1&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;dialog&quot;</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">&quot;myModalLabel&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal fade&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;document&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-dialog&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-title&quot;</span>&gt;</span>Normal modal<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-black-hint&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-right&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-flat xtg-color-text--grey-400&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-flat btn-brand-accent&quot;</span>&gt;</span>Accept<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-modal-with-title">
+          <div class="sg-text">
+            <h3 id="modal-with-title" class="sg">Modal with title</h3>
+            <p class="sg">Basic modal with title.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <a data-toggle="modal" data-target="#modal1" class="btn waves-attach waves-button waves-light waves-effect">Open modal</a>
+              <div id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade">
+                <div role="document" class="modal-dialog modal-xs">
+                  <div class="modal-content">
+                    <div class="modal-heading">
+                      <p class="modal-title">Use location service?</p>
+                    </div>
+                    <div class="modal-inner">
+                      <p class="text-black-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <p class="text-right">
+                        <a data-dismiss="modal" class="btn btn-flat xtg-color-text--grey-400">Cancel</a>
+                        <a data-dismiss="modal" class="btn btn-flat btn-brand-accent">Accept</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#modal1&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn waves-attach waves-button waves-light waves-effect&quot;</span>&gt;</span>Open modal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;modal1&quot;</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">&quot;-1&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;dialog&quot;</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">&quot;myModalLabel&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal fade&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;document&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-dialog modal-xs&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-title&quot;</span>&gt;</span>Use location service?<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-black-hint&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-right&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-flat xtg-color-text--grey-400&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-flat btn-brand-accent&quot;</span>&gt;</span>Accept<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-loading-modal">
+          <div class="sg-text">
+            <h3 id="loading-modal" class="sg">Loading modal</h3>
+            <p class="sg">Basic loading modal with a load spin, change text dynamically and insert what you like.</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <a data-toggle="modal" data-target="#modal2" class="btn waves-attach waves-button waves-light waves-effect">Open modal</a>
+              <div id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade">
+                <div role="document" class="modal-dialog modal-xs">
+                  <div class="modal-content">
+                    <div class="text-center margin--top-30">
+                      <div class="loader">Loading...</div>
+                    </div>
+                    <div class="modal-inner">
+                      <p class="text-black-hint text-center">Estamos cargando unas cosas...</p>
+                    </div>
+                    <div class="modal-footer">
+                      <p class="text-center">
+                        <a data-dismiss="modal" class="btn btn-flat btn-brand-accent">Cancelar</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#modal2&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn waves-attach waves-button waves-light waves-effect&quot;</span>&gt;</span>Open modal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;modal2&quot;</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">&quot;-1&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;dialog&quot;</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">&quot;myModalLabel&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal fade&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;document&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-dialog modal-xs&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-center margin--top-30&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;loader&quot;</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-black-hint text-center&quot;</span>&gt;</span>Estamos cargando unas cosas...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-center&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-flat btn-brand-accent&quot;</span>&gt;</span>Cancelar<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-block-click">
+          <div class="sg-text">
+            <h3 id="block-click" class="sg">Block click</h3>
+            <p class="sg">Use this modal for prevent modal disappear when click outside of the modal.</p>
+            <p class="sg">Only need to add
+              <code class="sg">data-backdrop=&apos;static&apos;</code>and
+              <code class="sg">data-keyboard=&apos;false&apos;</code>to modal container (
+              <code class="sg">modal</code>class).</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <a data-toggle="modal" data-target="#modal3" class="btn waves-attach waves-button waves-light waves-effect">Open modal</a>
+              <div id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" class="modal fade">
+                <div role="document" class="modal-dialog modal-xs">
+                  <div class="modal-content">
+                    <div class="modal-heading">
+                      <p class="modal-title">Use location service?</p>
+                    </div>
+                    <div class="modal-inner">
+                      <p class="text-black-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <p class="text-right">
+                        <a data-dismiss="modal" class="btn btn-flat xtg-color-text--grey-400">Cancel</a>
+                        <a data-dismiss="modal" class="btn btn-flat btn-brand-accent">Accept</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#modal3&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn waves-attach waves-button waves-light waves-effect&quot;</span>&gt;</span>Open modal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;modal3&quot;</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">&quot;-1&quot;</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;dialog&quot;</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">&quot;myModalLabel&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">data-backdrop</span>=<span class="hljs-value">&quot;static&quot;</span>
+<span class="hljs-attribute">data-keyboard</span>=<span class="hljs-value">&quot;false&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal fade&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;document&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-dialog modal-xs&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-heading&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-title&quot;</span>&gt;</span>Use location service?<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-black-hint&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;modal-footer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;text-right&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-flat xtg-color-text--grey-400&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">&quot;modal&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-flat btn-brand-accent&quot;</span>&gt;</span>Accept<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+      </section>
+
+    </div>
+  </div>
+  <footer>
+    <p>Made with
+      <i class="material-icons md-18 xtg-color-text--red-300">favorite</i>
+      by Amanda with
+      <a href="https://github.com/styledown/styledown">Styledown</a>
+    </p>
+  </footer>
+</body>
+
+</html>

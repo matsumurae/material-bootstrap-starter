@@ -1,0 +1,86 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+/// Mixin to generate dynamically active links in nav depending on color
+/// @group Mixins
+/// @param {string} $color color for display active link
+/// @author Amanda Copete
+@mixin is-active($color) {
+  &.is-active {
+    background-color: $color;
+    color: $white;
+  }
+}
+
+/// Mixin to generate dynamically padding and margin in all positions
+/// @output padding with position and px chosed
+/// @group Mixins
+/// @param {string} $type specify type of property
+/// @param {int | array} $quantity integer or array with numbers
+/// @param {string | array} $position position string or array with strings
+/// @author Amanda Copete
+/// @example
+///   @include dynamic('padding', $numbers-array, $position-array)
+@mixin dynamic($type, $quantity, $position: '') {
+  @if $position != '' {
+    #{$type}-#{$position}: #{$quantity}px!important;
+  } @else {
+    #{$type}: #{$quantity}px!important;
+  }
+}
+
+/// font-size mixin for add rem and font-size (old-browsers support)
+/// @link http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+/// @group Mixins
+/// @param {int} $size - font size in pixels
+/// @output font in rem and pixels (overriden if browser supports rem)
+/// @example
+///   @include font-size(16);
+@mixin font-size($size) {
+  font-size: #{$size}px;
+  font-size: rem($size);
+}
+
+/// Mixin to prefix a property
+/// @author Hugo Giraudel
+/// @param {String} $property - Property name
+/// @param {*} $value - Property value
+/// @param {List} $prefixes (()) - List of prefixes to print
+/// @output convert $property in cross-browser compatible using prefixes defined in $prefixes
+/// @example
+///   @include prefix(transition, all 0.30s ease-in-out, webkit moz);
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+/// https://css-tricks.com/snippets/sass/centering-mixin/
+/// http://codepen.io/ilokano/pen/mJxJPL
+@mixin center($pos:both ) {
+  position: absolute;
+
+  @if ($pos==both) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($pos==top) {
+    left: 50%;
+    transform: translate(-50%, 0);
+
+  } @else if ($pos==left) {
+    top: 50%;
+    transform: translate(0, -50%);
+  } @else if ($pos==right) {
+    top: 50%;
+    right:0;
+    transform: translate(0, -50%);
+  } @else if ($pos==bottom) {
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%, 0);
+  }
+}

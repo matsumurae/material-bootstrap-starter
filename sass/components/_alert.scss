@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// ALERTS
+// -----------------------------------------------------------------------------
+/// Generate dynamically alerts
+@each $name, $color in $colors {
+  .alert--#{$name} {
+    @extend %alert;
+    background-color: lighten($color, 30%);
+    border-left: 4px solid $color;
+    color: $color;
+
+    .xtg-alert__title { margin: 0; }
+  }
+}
+
+// small size
+.alert--small {
+  @extend %alert;
+
+  padding: 10px 20px;
+  @include font-size(14);
+}
+
+.alert--big {
+  @extend %alert;
+
+  padding: 20px;
+  @include font-size(20);
+}

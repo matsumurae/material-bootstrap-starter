@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// color array
+// -----------------------------------------------------------------------------
+$colors: (primary, $havelock),
+         (success, $mantis),
+         (danger, $pomegranate),
+         (warning, $sunflower),
+         (info, $aqua),
+         (default, $mako);
+
+$position: (top, 't'),
+           (left, 'l'),
+           (right, 'r'),
+           (bottom, 'b');

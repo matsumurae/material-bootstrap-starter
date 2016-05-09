@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// RADIOBUTTON
+// -----------------------------------------------------------------------------
+.radiobtn label { padding-left: 30px; }
+.radiobtn-circle { background-color: white; }
+
+// Small radio button
+.radio--small {
+  [class*="radiobtn-circle"] { top: 12px; }
+}
+
+// Big radio button
+.radio--big {
+  font-size: 18px;
+
+  [class*="radiobtn-circle"] {
+    height: 18px;
+    width: 18px;
+  }
+}

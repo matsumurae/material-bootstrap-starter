@@ -1,0 +1,41 @@
+// Basic typography style for body text
+// For use MDL colors: mdl-color-text--blue-500
+// Use MD table colors: https://www.google.com/design/spec/style/color.html#color-color-palette
+
+html { font-size: 16px; }
+
+body {
+  color: $body-color;
+  font-weight: 300;
+  font-family: $base-font;
+}
+
+// Anchor default style
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: $link-color-hover;
+}
+
+// -----------------------------------------------------------------------------
+// FONT SIZE
+// -----------------------------------------------------------------------------
+.font-18 { @include font-size(18); }
+.font-24 { @include font-size(24); }
+.font-36 { @include font-size(36); }
+.font-48 { @include font-size(48); }
+
+// IN em = using 16px as base
+.font-2x{ font-size:2em; } // 32px
+.font-3x{ font-size:3em; } // 48px
+.font-4x{ font-size:4em; } // 64px
+.font-5x{ font-size:5em;  } // 80px
+.font-lg{ font-size:1.4em; vertical-align:-15%; } // 22.4px
+
+@media only screen and (min--moz-device-pixel-ratio:0){
+  .font-lg{vertical-align:-26%}
+}

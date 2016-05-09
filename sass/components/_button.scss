@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// ACTION BUTTON SMALL - EDIT AND DELETE BUTTONS
+// -----------------------------------------------------------------------------
+// Small buttons
+.btn--small {
+  @extend %btn--small;
+  padding: 4px 10px;
+}
+
+// Action buttons - one above the other
+.buttons {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// ACTION BUTTONS - CANCEL, SAVE AND LOGIN
+// -----------------------------------------------------------------------------
+// Action buttons (delete, edit...)
+.btn--action {
+  @extend %btn--small;
+  padding-top: 0;
+  padding-bottom: 0;
+  @include font-size(15);
+  font-weight: 100;
+}
+
+// Action button icons aligned to left
+// Remember to put first span with icon and after label
+.btn--icon-left {
+  @extend %btn--icon;
+  left: -12px;
+}
+
+// Action button icons aligned to right
+// Remember to put first span label and after icon
+.btn--icon-right {
+  @extend %btn--icon;
+  right: -12px;
+}
+
+// Action button text -- inside container
+.btn--label { vertical-align: text-bottom; }

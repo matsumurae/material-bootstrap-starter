@@ -1,0 +1,76 @@
+
+// BASE COLORS
+// For use MDL colors with things: xtg-color--blue-500
+// For use MDL colors with text: xtg-color-text--blue-500
+// Use MD table colors: https://www.google.com/design/spec/style/color.html#color-color-palette
+
+// -----------------------------------------------------------------------------
+// BOOTSTRAP COLORS - http://chir.ag/projects/name-that-color/
+// Used for generate dynamically array colors (for alerts)
+// -----------------------------------------------------------------------------
+/// Primary color
+/// @type Color
+$havelock: #3f51b5;
+$havelock-light: lighten($havelock, 20);
+$havelock-dark: darken($havelock, 20);
+
+/// Info color
+/// @type Color
+$aqua: #4A89DC;
+$aqua-light: lighten($aqua, 20);
+$aqua-dark: darken($aqua, 20);
+
+/// Success color
+/// @type Color
+$mantis: #8CC152;
+$mantis-light: lighten($mantis, 20);
+$mantis-dark: darken($mantis, 20);
+
+/// Warning color
+/// @type Color
+$sunflower: #F6BB42;
+$sunflower-light: lighten($sunflower, 20);
+$sunflower-dark: darken($sunflower, 20);
+
+/// Danger color
+/// @type Color
+$pomegranate: #DA4453;
+$pomegranate-light: lighten($pomegranate, 20);
+$pomegranate-dark: darken($pomegranate, 20);
+
+/// Default color
+/// @type Color
+$cadet: #AAB2BD;
+$cadet-light: lighten($cadet, 20);
+$cadet-dark: darken($cadet, 20);
+
+// -----------------------------------------------------------------------------
+// BASE COLORS - http://chir.ag/projects/name-that-color/
+// -----------------------------------------------------------------------------
+/// Background light
+/// @type Color
+$white: #FFFFFF;
+
+/// Text light
+/// @type Color
+$nevada: #656D78;
+
+/// Text dark
+/// @type Color
+$mako: #434A54;
+
+/// Placeholder enabled
+/// @type Color
+$ghost: #EEEEEE;
+
+/// Input disabled, radio / checkbox disabled
+/// @type Color
+$alto: #DFDFDF;
+
+// -----------------------------------------------------------------------------
+// color definitions
+// -----------------------------------------------------------------------------
+$body-color: $mako;
+$link-color: $havelock;
+$link-color-hover: $havelock-dark;
+$background-color: $white;

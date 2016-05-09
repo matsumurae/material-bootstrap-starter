@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// Table boostrap styles
+// -----------------------------------------------------------------------------
+// Replace boostrap styles
+.table {
+  text-align: center;
+
+  thead td, thead th {
+    text-align: center;
+    text-transform: uppercase;
+    color: $body-color;
+    @include font-size(12);
+  }
+}
+
+// Boostrap striped table - boostrap style doesn't work
+.table-striped {
+  tbody tr:nth-of-type(odd) { background-color: whitesmoke; }
+}
+
+/// Boostrap hover more dark - due to stripe color (it's same)
+.table-hover {
+  tbody tr:hover { background-color: $cadet-light }
+}
+
+// -----------------------------------------------------------------------------
+// Table style
+// -----------------------------------------------------------------------------
+.xtg-table--fixed { width: 100%; }

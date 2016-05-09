@@ -1,0 +1,95 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass placeholders.
+// -----------------------------------------------------------------------------
+// BUTTONS
+// Base
+%btn {
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42857143;
+  margin-bottom: 0;
+  max-width: 100%;
+  padding: 6px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:hover, &:focus { text-decoration: none;}
+}
+
+// Action buttons - edit, delete small - inside xtg-option
+%btn--small {
+  @extend %btn;
+  @include font-size(12);
+  letter-spacing: 1px;
+  box-shadow: 0 0 0;
+}
+
+// LABELS
+// Base select label with checkbox / radiobutton
+%select-label {
+  border-radius: 2px;
+  padding: 8px 15px;
+  color: $cadet-dark;
+  position: relative;
+  background-color: $ghost;
+  border: 1px solid #E4e4e4;
+}
+
+// Base label
+%label {
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  height: 25px;
+  margin: 0;
+  padding: 0 15px;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0;
+  overflow: hidden;
+  outline: none;
+  text-align: center;
+  line-height: 25px;
+  vertical-align: middle;
+  margin-right: 5px; // For hotel__label
+}
+
+// INPUTS
+// input
+%input {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 3px;
+  outline: none; // Remove browser focus style
+  @include prefix(transition, all 0.30s ease-in-out, webkit moz);
+  @include prefix(box-sizing, border-box, webkit moz);
+}
+
+// ALERTS
+%alert {
+  padding: 15px;
+  margin-bottom: 1rem;
+  @include font-size(16);
+}
+
+// ACTION BUTTONS
+// Action button icons
+%btn--icon {
+  position: relative;
+  background: 0 0;
+  background: rgba(0,0,0,.15);
+  display: inline-block;
+  padding: 2px 10px;
+
+  .icon { font-weight: 600; }
+}

@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+
+/// Convert PX to REM. Shoud be used with font-size mixin.
+/// @link http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+/// @group Functions
+/// @param {int} $size - pixels to convert to rem
+/// @output px converted to rem
+/// @example
+///   @include rem(16);
+@function rem($size) {
+  $remSize: $size / 16;
+  @return $remSize * 1rem;
+}

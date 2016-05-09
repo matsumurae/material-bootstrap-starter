@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+body {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+// Icons base
+.icon { font-size: inherit; }
+
+.checkbox-adv, .radiobtn-adv { font-size: inherit; }
+
+// -----------------------------------------------------------------------------
+// CUSTOM STYLES COMMON - ORIGINALS
+// -----------------------------------------------------------------------------
+.display--block { display: block; }
+.display--inline { display: inline; }
+.float--left { float: left; }
+.float--right { float: right; }
+.card--border-top { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+.highlight { background-color: rgba(255, 193, 7, 0.32); }
+.text--uppercase { text-transform: uppercase; }
+.pos--rel { position: relative; }
+.pos--abs { position: absolute; }
+.pos--fix { position: fixed; }
+
+// -----------------------------------------------------------------------------
+// STEALED STYLES
+// -----------------------------------------------------------------------------
+// Box shadow from MDL
+.shadow--2dp { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+.shadow--3dp { box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12); }
+.shadow--4dp { box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+.shadow--6dp { box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2); }
+.shadow--8dp { box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+.shadow--16dp { box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+.shadow--24dp { box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2); }
+
+// -----------------------------------------------------------------------------
+// DYNAMIC STYLES
+// -----------------------------------------------------------------------------
+/// Generate padding in all postions, counting 10 to 10
+@for $number from 1 through 100 {
+ @each $pos, $name in $position {
+   .p#{$name}-#{$number} {
+     @include dynamic('padding', $number, $pos);
+   }
+   .m#{$name}-#{$number} {
+     @include dynamic('margin', $number, $pos);
+   }
+ }
+ .p-#{$number} {
+   @include dynamic('padding', $number);
+ }
+ .m-#{$number} {
+   @include dynamic('margin', $number);
+ }
+ $number: $number + 10;
+}
+
+/// Generate dynamically content width
+@for $number from 1 through 100 {
+ .w-#{$number} { width: $number * 1%; }
+ $number: $number + 10;
+}
+
+/// Generate dynamically content height
+@for $number from 1 through 100 {
+ .h-#{$number} { height: $number * 1%; }
+ $number: $number + 10;
+}

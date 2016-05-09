@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// This file contains all media queries of the app
+// -----------------------------------------------------------------------------
+// md and down
+@include media-breakpoint-down(sm) {}
+
+// sm and down
+@include media-breakpoint-down(md) {}
+
+// xs only
+@include media-breakpoint-down(sm) {}

@@ -1,0 +1,349 @@
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+/*
+ * jumbotron for the styleguide.
+ */
+
+.jumbotron-styleguide {
+  background: #fafafa;
+  border-bottom: solid 1px #eee;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jumbotron-styleguide h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  color: #111;
+  font-size: 3.4em;
+  margin-bottom: 20px;
+}
+
+.jumbotron-styleguide p {
+  font-weight: 400;
+  font-size: 1.15em;
+  line-height: 1.7;
+  color: #222;
+}
+
+.jumbotron-styleguide .container {
+  max-width: 500px;
+}
+
+/*
+ * override heading styles.
+ */
+
+h2.sg.sg {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+}
+
+/*
+ * for @example.slim
+ */
+
+.sg-slim .sg-canvas {
+  max-width: 300px;
+}
+
+/*
+ * for @example.wide
+ */
+
+.sg-wide .sg-canvas {
+  max-width: 540px;
+}
+
+
+/**
+ * Custom styles made by Amanda Copete
+ */
+
+body { overflow: auto; }
+
+footer {
+  background: #323949;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  height: 100%;
+}
+
+.navbar { background-color: #323949; opacity: 0.8; }
+.navbar-nav .nav-link { color: white; }
+.nav>li>a:hover, .nav>li>a:focus { background-color: rgba(255,255,255,0.5); }
+
+.heading {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #7B8292;
+  color: #eee;
+}
+
+.heading h1 {
+  display: inline-block;
+  padding: 15px;
+  background-color: rgba(26, 30, 39, 0.4);
+}
+
+/**
+ * Styledown
+ *
+ * This is the basic styles to make a Styledown document look like a proper
+ * style guide. Recommendation: use and remove any pieces as you see fit.
+ */
+
+/**
+ * Basic normalize
+ */
+
+h2.sg, h3.sg, ul.sg, p.sg {
+  margin: 20px 0;
+  line-height: 1.55;
+}
+h2.sg {
+  font-size: 2.2em;
+  font-weight: 100;
+}
+h3.sg {}
+h3.sg + .sg {
+  margin-top: -20px;
+}
+
+/* Colors */
+p.sg, ul.sg {
+  color: #555;
+}
+h2.sg {
+  color: #111;
+}
+h3.sg {
+  color: #333;
+}
+
+h2.sg.sg {
+  background-color: #323949;
+  display: inline-block;
+  padding: 0 20px;
+  opacity: 0.5;
+  color: #eee;
+}
+
+code.sg {
+  background: rgba(250, 250, 250, 0.5);
+  color: #579;
+
+  padding: 2px 5px;
+  margin: 0 5px;
+  border-radius: 2px;
+  font-size: 0.8em;
+  font-family: menlo, monospace;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.01), inset -1px -1px rgba(0,0,0,0.01);
+}
+
+code.sg:first-child {
+  background: rgba(0, 100, 250, 0.1);
+  box-shadow: none;
+  color: #357;
+}
+
+.sg-block, .sg-code, .sg-canvas, .sg-text {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * An <h3> block.
+ *
+ * It looks like:
+ *
+ *     .sg-block
+ *       .sg-text       - text items
+ *         h3
+ *         p
+ *         ...
+ *       .sg-example
+ *         .sg-canvas   - canvas where its displayed
+ *         .sg-code     - code snippet
+ */
+
+.sg-section { padding: 20px 0; }
+
+.sg-section:after {
+  content: '...';
+  color: #323949;
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
+
+.sg-section:last-of-type:after { content: ''; }
+
+.sg-section-heading {
+  font-size: 2em;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-top: 0!important;
+}
+
+.sg-block {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.sg-block:last-of-type { border-bottom: 0; }
+
+.sg-block:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/**
+ * Text element
+ */
+
+@media (min-width: 768px) {
+  .sg-text {
+    float: left;
+    width: 26%;
+  }
+
+  .sg-text + .sg-example,
+  .sg-text + .sg-code {
+    float: right;
+    width: 70%;
+  }
+}
+
+.sg-text > :first-child {
+  margin-top: 0;
+}
+
+
+/**
+ * An example's canvas.
+ */
+
+.sg-canvas {
+  margin-bottom: 20px;
+}
+
+.sg-canvas::before, .sg-canvas::after {
+  content: "";
+  display: table;
+  line-height: 0;
+  clear: both;
+}
+
+.sg-padded .sg-canvas {
+  padding: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow-x: auto;
+}
+
+/**
+ * The <pre> code that shows the sample.
+ */
+
+.sg-code {
+  border: solid 1px transparent;
+  overflow-x: auto;
+  padding: 10px;
+  font-size: 0.85em;
+  font-family: menlo, monospace;
+  line-height: 1.5;
+  background: #eee;
+  color: #333;
+}
+
+/*
+ * Syntax highlighting
+ */
+
+.sg .hljs-tag,
+.sg .hljs-comment {
+  color: #999;
+}
+
+.sg .hljs-keyword,
+.sg .hljs-title {
+  color: #345;
+}
+
+.sg .hljs-attribute {
+  color: #59a;
+}
+
+.sg .hljs-string,
+.sg .hljs-number,
+.sg .hljs-value {
+  color: #3ac;
+}
+
+/*
+ * Code expansion
+ *
+ *     .sg-example
+ *       .sg-canvas
+ *       pre.sg-code
+ *       button.sg-expando
+ */
+
+.sg-code.sg-hidden {
+  display: none;
+}
+
+.sg-expando {
+  text-align: center;
+  width: 100%;
+  padding: 5px 10px 20px 10px;
+  margin-bottom: -20px;
+}
+
+.sg-expando-contract { margin-bottom: 20px; }
+
+.sg-expando:before {
+  content: 'view code';
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  font-size: 15px;
+  background: #e2e2e2;
+  border-radius: 3px;
+  color: #black;
+}
+
+.sg-expando:hover:before,
+.sg-expando:focus:before {
+  color: #222;
+  background: #ddd;
+}
+
+.sg-expando:active:before {
+  color: #fff;
+  background: #111;
+}
+
+.sg-expando-contract:before {
+  content: '\2715';
+}
+
+/*
+ * hover behavior
+ */

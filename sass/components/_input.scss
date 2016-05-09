@@ -1,0 +1,53 @@
+// Bootstrap inputs
+.form-control {
+  border: 1px solid white;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+// -----------------------------------------------------------------------------
+// INPUT & TEXTAREA BASE
+// -----------------------------------------------------------------------------
+.input, .input--textarea {
+  @extend %input;
+  border: 1px solid $cadet;
+
+  &:focus {
+    border: 1px solid $havelock;
+  }
+}
+
+// Search bar
+.input--search {
+  @extend %input;
+  background-color: $white;
+  border: 1px solid $cadet-light;
+  padding-left: 35px;
+
+  &:focus {
+    border: 1px solid $cadet-light;
+    background-color: $cadet-light;
+  }
+}
+// Search bar icon
+.input--icon {
+  @include font-size(20);
+  color: $cadet;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+// Placeholders
+::-webkit-input-placeholder { // Chrome/Opera/Safari
+  color: $cadet;
+}
+::-moz-placeholder { // Firefox 19+
+  color: $cadet;
+}
+:-ms-input-placeholder { // IE 10+
+  color: $cadet;
+}
+:-moz-placeholder { // Firefox 18-
+  color: $cadet;
+}
