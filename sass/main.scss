@@ -1,23 +1,5 @@
 // -----------------------------------------------------------------------------
-// HubPushWeb Template 0.1
-//
-// CONTENTS
-//
-// BASE - BOILERPLATE CODE
-// Base......................Standard styles for commonly used HTML elements.
-// Reset.....................Reset rules of normalize.css
-// Font......................Import fonts rules.
-// Typography................Typography style.
-//
-// COMPONENTS - SMALL COMPONENTS
-// Alert.....................Base alerts.
-// Button....................Base buttons.
-// Checkbox..................Base checkboxes.
-// Input.....................Base inputs & textarea.
-// Radio.....................Base radio buttons.
-// Table.....................Base table styles.
-// Loader....................Loading spin.
-// Breakpoints...............Breakpoints of all the app.
+// Bootstrap + Material starter kit v0.0.2
 //
 // UTILS - SASS HELPERS SHOULD NOT OUTPUT ANY LINE OF CSS
 // Functions.................Sass functions.
@@ -33,6 +15,32 @@
 // MD........................Material Design components for Bootstrap - v1.3.0
 //
 // VENDORS CSS - EXTERNAL LIBRARIES AND FRAMEWORKS
+//
+//
+// BASE - BOILERPLATE CODE
+// Base......................Standard styles for commonly used HTML elements.
+// Reset.....................Reset rules of normalize.css
+// Font......................Import fonts rules.
+// Typography................Typography style.
+//
+// LAYOUT - Main parts of the site made components
+//
+//
+// COMPONENTS - SMALL COMPONENTS
+// Alert.....................Base alerts.
+// Button....................Base buttons.
+// Checkbox..................Base checkboxes.
+// Input.....................Base inputs & textarea.
+// Radio.....................Base radio buttons.
+// Table.....................Base table styles.
+// Loader....................Loading spin.
+// Breakpoints...............Breakpoints of all the app.
+//
+// PAGES - Page-specific styles
+// 404.......................404 page styles.
+//
+// THEMES - Different themes for the page
+//
 // -----------------------------------------------------------------------------
 
 // Utils
@@ -59,6 +67,8 @@
     'base/typography',
     'base/base';
 
+// Layout
+
 // Components
 @import
     'components/alert',
@@ -69,3 +79,7 @@
     'components/table',
     'components/loader',
     'components/breakpoints'; // should be the last ever
+
+// Pages
+
+// Themes
